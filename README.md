@@ -11,9 +11,13 @@
     * [Raw Data](https://dumps.wikimedia.org/kowiki/latest/kowiki-latest-pages-articles.xml.bz2)
     * [WikiExtractor](https://github.com/attardi/wikiextractor.git)
 
+## 2. ko_wiki_nouns.txt
+* proprocessing 된 데이터 -> 명사 추출
+* [ko_wiki_nouns.txt](https://drive.google.com/file/d/13aZVnNJi6TqvpkD0ZPky9AFIV8P1-BS-/view?usp=sharing)
 
-## 2. 수집된 데이터로 Word2Vec 모델을 활용하여 임베딩 된 단어 벡터 추출
-### 파라미터 설정 값
+## 3. ko_w2v.ipynb
+* 수집된 데이터로 Word2Vec 모델을 활용하여 임베딩 된 단어 벡터 추출
+* 파라미터 설정 값
   * vector_size : 워드 벡터의 특징 값(임베딩 된 벡터의 차원) -> 100
   * window :중심 단어를 기준으로 주변 단어를 slicing할 word의 개수 -> 5
   * min_count : 단어 최소 빈도 수 제한(빈도가 적은 단어들은 학습에서 배제)
@@ -25,3 +29,7 @@
     * sg = 1 : Skip-gram
     * 우리는 단어를 입력받아 그 단어를 통해 주변 단어를 예측할 것이기 때문에 CBOW를 사용할 것.
   * 그 외 파라미터 값 : default
+
+## 4. ko_w2v_model
+* 학습된 모델
+* [ko_w2v_model](https://drive.google.com/file/d/1P0XW4B3Agyzemg4T961zynWOQPmoDuU_/view?usp=sharing)
