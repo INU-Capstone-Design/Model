@@ -5,10 +5,11 @@
 *    GloVE는 co-occurrence를 판단하기 위해 최소 말뭉치 단어 개수의 2제곱 크기 만큼의행렬을 필요 -> 저차원 임베딩에선 Word2Vec이 성능면에서 유리하다고 판단.
 
 
-## 1. wikipedia databse로 Raw Data 활용
-#### WikiExtractor를 이용하여 Raw Data 전처리
-  * [Raw Data](https://dumps.wikimedia.org/kowiki/latest/kowiki-latest-pages-articles.xml.bz2)
-  * [WikiExtractor](https://github.com/attardi/wikiextractor.git)
+## 1. data_processing.ipynb
+*  wikipedia databse로 Raw Data 활용
+* WikiExtractor를 이용하여 Raw Data 전처리
+    * [Raw Data](https://dumps.wikimedia.org/kowiki/latest/kowiki-latest-pages-articles.xml.bz2)
+    * [WikiExtractor](https://github.com/attardi/wikiextractor.git)
 
 
 ## 2. 수집된 데이터로 Word2Vec 모델을 활용하여 임베딩 된 단어 벡터 추출
